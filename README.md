@@ -13,19 +13,19 @@ This script uses **3** command-line tools below. Please make them executable by 
 
 Version `2.11.0` (or more). 
 
-* Local-BLAST ( [https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/]() ) 
+* Local-BLAST ( https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/ ) 
 
 ### 2. CD-HIT 
 
 Version `4.8.1` (or more). 
 
-* CD-HIT ( [http://weizhong-lab.ucsd.edu/cd-hit/]() ) 
+* CD-HIT ( http://weizhong-lab.ucsd.edu/cd-hit/ ) 
 
 ### 3. MAFFT 
 
 Version `7.475` (or more). 
 
-* MAFFT ( [https://mafft.cbrc.jp/alignment/software/]() ) 
+* MAFFT ( https://mafft.cbrc.jp/alignment/software/ ) 
 
 ## Workflow 
 
