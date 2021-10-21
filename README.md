@@ -35,11 +35,9 @@ In  FASTA format. See some example input files in `demo` directory.
 
 ### 2. Collect similar sequences 
 
-It uses `psiblast` command to collect similar sequences with it's options as follows: 
+It uses `blastp` command to collect similar sequences with it's options as follows: 
 
-* `-num_iterations` : 3 
-* `-evalue` : 10 
-* `-inclusion_ethresh` : 10
+* `-evalue` : 10e-5 
 * `-seg` : yes 
 * `-outfmt` : "6 sseqid"  
 
