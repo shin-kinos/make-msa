@@ -2,7 +2,7 @@
 
 #########################################################################################
 # Full path of blast+ database. [e.g.] blast_db=/Users/username/blast+/database/swissprot
-blast_db=/Users/shintarokinoshita/SOFTWARE/Local-BLAST/ncbi-blast-2.11.0+/db/swissprot
+blast_db=
 
 #########################################################################################
 
