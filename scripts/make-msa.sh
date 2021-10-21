@@ -2,7 +2,7 @@
 
 #########################################################################################
 # Full path of blast+ database. [e.g.] blast_db=/Users/username/blast+/database/swissprot
-blast_db=
+blast_db=/Users/shintarokinoshita/SOFTWARE/Local-BLAST/ncbi-blast-2.11.0+/db/swissprot
 
 #########################################################################################
 
@@ -30,19 +30,20 @@ cd ./$directory_output
 
 # blast+ arguments.
 blast_input=$1
-blast_num_iterations=3
-blast_evalue=10
+blast_evalue=10e-5
+#blast_num_iterations=3
 
 # Run blast+
-psiblast \
+#psiblast \
+blastp \
 -query             $blast_input \
 -db                $blast_db \
--num_iterations    $blast_num_iterations \
 -evalue            $blast_evalue \
 -seg               yes \
 -outfmt            "6 sseqid" \
--inclusion_ethresh $blast_evalue \
 -out               blast.output
+#-num_iterations    $blast_num_iterations \
+#-inclusion_ethresh $blast_evalue \
 
 # Remove duplication of 'blast.output'.
 blastdbcmd_input=`cat blast.output | sort | uniq`
