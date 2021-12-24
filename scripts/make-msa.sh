@@ -61,7 +61,10 @@ blastdbcmd \
 cd-hit \
 -i blast.output.fasta \
 -o cdhit.output.fasta \
--c 0.9
+-c 0.7
+
+# Overwrite the input file (query sequence) to 'cdhit.output.fasta'
+cat $1 >> cdhit.output.fasta
 
 # Define MAFFT output filename.
 mafft_output=`echo "aligned_"$blast_input`
