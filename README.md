@@ -45,7 +45,7 @@ Then, based on the output file, Multi-FASTA file is constructed by `blastdbcmd` 
 
 ### 3. Reduce redundancy 
 
-By using CD-HIT, sequence redundancy in the Multi-FASTA file is reduced. All of the CD-HIT options are default.
+By using CD-HIT, sequence redundancy in the Multi-FASTA file is reduced with it's `-c` command at `0.7`.
 
 ### 4. Construct MSA 
 
